@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f2e9" />
+    <meta name="description" content="Discover useful finds for home, kitchen, tech, travel, and the outdoors. Browse the Picks Nest edit by category or search for just the right thing." />
+    <title>Picks Nest — Find your next everyday favorite</title>
+    <link rel="preconnect" href="https://picksnest.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="announcement-bar">
+      <div class="shell announcement-inner">
+        <span class="announcement-spark" aria-hidden="true">✳</span>
+        <p>Small upgrades. A smoother everyday.</p>
+        <a href="#shop">Explore the latest finds <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <header class="site-header" id="top">
+      <div class="shell header-main">
+        <a class="brand" href="#top" aria-label="Picks Nest home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="m7.5 21 16.5-13L40.5 21v18a2.5 2.5 0 0 1-2.5 2.5H10A2.5 2.5 0 0 1 7.5 39V21Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+              <path d="M18.5 41.5V29a5.5 5.5 0 0 1 11 0v12.5M16 20c2.3-3.6 6.3-5.1 10.3-3.8 2.3.8 4 2.4 5.2 4.8-4.3 1.6-8.6 1.6-11.8.3-1.5-.6-2.6-1.1-3.7-1.3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">picks<span>nest</span><i>.</i></span>
+            <span class="brand-tagline">A home for good finds</span>
+          </span>
+        </a>
+
+        <form class="header-search" id="header-search-form" role="search">
+          <label class="sr-only" for="header-search">Search the Picks Nest collection</label>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.7" cy="10.7" r="6.7" /><path d="m15.7 15.7 4.4 4.4" /></svg>
+          <input id="header-search" type="search" placeholder="What are you looking for?" autocomplete="off" />
+          <button type="submit" aria-label="Search finds">Search</button>
+        </form>
+
+        <div class="header-actions">
+          <button class="saved-nav" type="button" aria-label="Show saved picks" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 8.8c0 4.3-8.3 10-8.3 10s-8.3-5.7-8.3-10A4.3 4.3 0 0 1 12 6.4a4.3 4.3 0 0 1 8.3 2.4Z" /></svg>
+            <span>Saved</span><span class="saved-count" aria-label="0 saved picks">0</span>
+          </button>
+          <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+        </div>
+      </div>
+
+      <nav class="category-nav" aria-label="Shop by category">
+        <div class="shell category-nav-inner">
+          <a class="nav-shop active" href="#shop" data-category-link="all">All finds</a>
+          <a href="#shop" data-category-link="Kitchen Finds">Kitchen</a>
+          <a href="#shop" data-category-link="Home Finds">Home</a>
+          <a href="#shop" data-category-link="Tech Finds">Tech</a>
+          <a href="#shop" data-category-link="Outdoor Finds">Outdoor</a>
+          <a href="#shop" data-category-link="Travel Finds">Travel</a>
+          <a href="#shop" data-category-link="Gadgets">Gadgets</a>
+          <span class="nav-note"><span></span> Thoughtfully picked, easy to explore</span>
+        </div>
+      </nav>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile category navigation" hidden>
+        <a href="#shop" data-category-link="all">Shop all finds <span>→</span></a>
+        <a href="#shop" data-category-link="Kitchen Finds">Kitchen <span>→</span></a>
+        <a href="#shop" data-category-link="Home Finds">Home <span>→</span></a>
+        <a href="#shop" data-category-link="Tech Finds">Tech <span>→</span></a>
+        <a href="#shop" data-category-link="Outdoor Finds">Outdoor <span>→</span></a>
+        <a href="#shop" data-category-link="Travel Finds">Travel <span>→</span></a>
+        <a href="#shop" data-category-link="Gadgets">Gadgets <span>→</span></a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero shell" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="hero-kicker"><span class="kicker-dot"></span> THE PICKSNEST EDIT <span class="kicker-line"></span> USEFUL FINDS, NO ENDLESS SCROLLING</p>
+          <h1 id="hero-heading">Find your next<br />everyday <em>favorite.</em></h1>
+          <p class="hero-description">Clever kitchen helpers, feel-good home upgrades, and practical little discoveries—curated so the good stuff is easier to find.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#shop">Browse all finds <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet" href="#categories">Explore categories <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-assurance">
+            <span class="assurance-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m4.5 10.2 3.4 3.3 7.8-7.7" /></svg></span>
+            <p><strong>Good finds, made easier.</strong><br />Search by need, browse by category, save for later.</p>
+          </div>
+        </div>
+        <a class="hero-feature" href="https://picksnest.com/cordless-bathtub-jet-spa-with-bubble-mode/" target="_blank" rel="noopener noreferrer" aria-label="Explore the cordless bathtub jet spa product guide">
+          <img src="https://picksnest.com/wp-content/uploads/2026/10/ChatGPT-Image-Sep-11-2026-03_52_04-AM-1024x576.png" alt="Blue cordless bathtub jet spa beside a bathtub with water jets running" fetchpriority="high" />
+          <span class="hero-feature-shade"></span>
+          <span class="feature-pill"><span class="feature-pill-dot"></span> JUST ADDED <span>·</span> OCT 09</span>
+          <span class="feature-card">
+            <span class="feature-card-top"><span class="feature-card-label">THE LATEST FIND</span><span class="feature-card-arrow" aria-hidden="true">↗</span></span>
+            <strong>Cordless Bathtub Jet Spa With Bubble Mode</strong>
+            <span class="feature-card-bottom">A little at-home unwind <span>Explore the pick →</span></span>
+          </span>
+          <span class="hero-image-caption">A more relaxing way to end the day.</span>
+        </a>
+        <div class="hero-index" aria-hidden="true"><span>01</span><i></i><span>06</span></div>
+      </section>
+
+      <section class="category-section shell" id="categories" aria-labelledby="categories-heading">
+        <div class="section-heading category-heading">
+          <div>
+            <p class="eyebrow">A good place to start</p>
+            <h2 id="categories-heading">Shop by category<span class="heading-dot">.</span></h2>
+          </div>
+          <p class="section-aside">Pick a space, a task, or a little curiosity.<br />We’ll bring the finds to you.</p>
+        </div>
+        <div class="category-tiles" id="category-tiles">
+          <button class="category-tile category-kitchen" type="button" data-category="Kitchen Finds">
+            <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M9 5v8M13 5v8M17 5v8M13 13v14M23 5c-2 3-3 6-3 9h6V5M23 14v13" /></svg></span>
+            <span class="tile-name">Kitchen</span><span class="tile-count"><span data-tile-count>Finds</span><b aria-hidden="true">→</b></span>
+          </button>
+          <button class="category-tile category-home" type="button" data-category="Home Finds">
+            <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m4 14 12-10 12 10v14H4V14Z" /><path d="M12 28V18h8v10M4 14h24" /></svg></span>
+            <span class="tile-name">Home</span><span class="tile-count"><span data-tile-count>Finds</span><b aria-hidden="true">→</b></span>
+          </button>
+          <button class="category-tile category-tech" type="button" data-category="Tech Finds">
+            <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="6" width="22" height="15" rx="2" /><path d="M11 27h10M16 21v6M10 12h4M10 16h8M21 11v6" /></svg></span>
+            <span class="tile-name">Tech</span><span class="tile-count"><span data-tile-count>Finds</span><b aria-hidden="true">→</b></span>
+          </button>
+          <button class="category-tile category-outdoor" type="button" data-category="Outdoor Finds">
+            <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 28V14M16 20c-7 0-10-4-10-10 7 0 10 4 10 10ZM16 16c0-7 4-10 10-10 0 7-4 10-10 10Z" /><path d="M10 28h12" /></svg></span>
+            <span class="tile-name">Outdoor</span><span class="tile-count"><span data-tile-count>Finds</span><b aria-hidden="true">→</b></span>
+          </button>
+          <button class="category-tile category-travel" type="button" data-category="Travel Finds">
+            <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="10" width="22" height="18" rx="3" /><path d="M11 10V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3M11 15v8M21 15v8M5 17h22" /></svg></span>
+            <span class="tile-name">Travel</span><span class="tile-count"><span data-tile-count>Finds</span><b aria-hidden="true">→</b></span>
+          </button>
+          <button class="category-tile category-gadgets" type="button" data-category="Gadgets">
+            <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m16 4 3.1 8.9L28 16l-8.9 3.1L16 28l-3.1-8.9L4 16l8.9-3.1L16 4Z" /><path d="m25 3 .8 2.2L28 6l-2.2.8L25 9l-.8-2.2L22 6l2.2-.8L25 3Z" /></svg></span>
+            <span class="tile-name">Gadgets</span><span class="tile-count"><span data-tile-count>Finds</span><b aria-hidden="true">→</b></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="finder-section" id="shop" aria-labelledby="finder-heading">
+        <div class="shell">
+          <div class="finder-topline">
+            <div class="section-heading finder-heading">
+              <div>
+                <p class="eyebrow">The good-find directory</p>
+                <h2 id="finder-heading">Find the right little thing<span class="heading-dot">.</span></h2>
+              </div>
+              <p class="section-aside">Real product guides from Picks Nest.<br />Easy to search. Easier to explore.</p>
+            </div>
+            <div class="finder-feature-note"><span class="note-star" aria-hidden="true">✳</span><span>Thoughtfully collected for everyday life</span></div>
+          </div>
+
+          <div class="finder-search-row">
+            <label class="finder-search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.7" cy="10.7" r="6.7" /><path d="m15.7 15.7 4.4 4.4" /></svg>
+              <span class="sr-only">Search all products</span>
+              <input id="shop-search" type="search" placeholder="Search products, rooms, or everyday needs…" autocomplete="off" />
+              <kbd>⌘ K</kbd>
+            </label>
+            <div class="quick-searches" aria-label="Popular searches">
+              <span>Try:</span>
+              <button type="button" data-query="kitchen">Kitchen</button>
+              <button type="button" data-query="charging">Charging</button>
+              <button type="button" data-query="outdoor">Outdoor</button>
+            </div>
+          </div>
+
+          <div class="finder-layout">
+            <aside class="filter-sidebar" aria-label="Filter products">
+              <div class="filter-title"><span>Browse by</span><button type="button" class="clear-filters" id="clear-filters">Reset</button></div>
+              <div class="filter-list" id="category-filters" role="group" aria-label="Product categories"></div>
+              <div class="sidebar-note">
+                <span class="sidebar-note-icon" aria-hidden="true">✳</span>
+                <strong>Not sure where to start?</strong>
+                <p>Search what you need—or save a find to come back to later.</p>
+              </div>
+            </aside>
+
+            <div class="catalog-area">
+              <div class="catalog-toolbar">
+                <div class="catalog-result" aria-live="polite"><strong id="result-count">Showing all finds</strong><span id="result-description">A little something for every corner.</span></div>
+                <div class="toolbar-controls">
+                  <button class="saved-filter" id="saved-filter" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 8.8c0 4.3-8.3 10-8.3 10s-8.3-5.7-8.3-10A4.3 4.3 0 0 1 12 6.4a4.3 4.3 0 0 1 8.3 2.4Z" /></svg>Saved <span id="saved-filter-count">0</span></button>
+                  <label class="sort-control"><span>Sort</span><select id="sort-select" aria-label="Sort product finds"><option value="latest">Latest</option><option value="az">A to Z</option></select></label>
+                </div>
+              </div>
+              <div class="active-filters" id="active-filters" aria-live="polite"></div>
+              <div class="product-grid" id="product-grid" aria-live="polite"></div>
+              <div class="empty-state" id="empty-state" hidden>
+                <span class="empty-icon" aria-hidden="true">⌕</span>
+                <h3>No finds here just yet.</h3>
+                <p>Try another search or clear the filters to see all Picks Nest finds.</p>
+                <button class="button button-primary" type="button" id="empty-reset">Show all finds</button>
+              </div>
+              <div class="load-more-wrap"><p class="load-more-note" id="load-more-note"></p><button class="load-more" type="button" id="load-more">Load more finds <span aria-hidden="true">↓</span></button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-section shell" aria-labelledby="how-heading">
+        <div class="how-intro">
+          <p class="eyebrow">A clearer way to discover</p>
+          <h2 id="how-heading">Less scrolling.<br /><em>More good finds.</em></h2>
+          <p>We gather useful products and organize them around the things you do every day—so finding a helpful little upgrade feels simple.</p>
+          <a class="text-link" href="#shop">Start exploring <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="how-steps">
+          <article class="how-step"><span class="step-number">01</span><span class="step-icon" aria-hidden="true"><svg viewBox="0 0 28 28"><circle cx="12" cy="12" r="7.5"/><path d="m18 18 6 6M8.5 12h7M12 8.5v7"/></svg></span><div><h3>Search what you need</h3><p>Look up a product, a task, or the room you’re working on.</p></div></article>
+          <article class="how-step"><span class="step-number">02</span><span class="step-icon" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="m4 9 10-6 10 6v14H4V9Z"/><path d="M10 23v-8h8v8M4 9h20"/></svg></span><div><h3>Browse by category</h3><p>Go straight to kitchen, home, tech, travel, outdoor, or gadgets.</p></div></article>
+          <article class="how-step"><span class="step-number">03</span><span class="step-icon" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M23 10.2c0 4.7-9 10.8-9 10.8s-9-6.1-9-10.8a4.7 4.7 0 0 1 9-2.6 4.7 4.7 0 0 1 9 2.6Z"/></svg></span><div><h3>Save a find for later</h3><p>Keep a shortlist in this browser while you compare your options.</p></div></article>
+        </div>
+      </section>
+
+      <section class="affiliate-note shell" aria-label="Affiliate disclosure">
+        <span class="affiliate-note-icon" aria-hidden="true">i</span>
+        <p><strong>A quick note:</strong> Picks Nest may earn a commission when you buy through links on our site, at no extra cost to you. Product guides include more details.</p>
+        <a href="https://picksnest.com/affiliate-disclosure/" target="_blank" rel="noopener noreferrer">Affiliate disclosure <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-main">
+        <div class="footer-brand-column">
+          <a class="brand footer-brand" href="#top" aria-label="Picks Nest home">
+            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="m7.5 21 16.5-13L40.5 21v18a2.5 2.5 0 0 1-2.5 2.5H10A2.5 2.5 0 0 1 7.5 39V21Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M18.5 41.5V29a5.5 5.5 0 0 1 11 0v12.5M16 20c2.3-3.6 6.3-5.1 10.3-3.8 2.3.8 4 2.4 5.2 4.8-4.3 1.6-8.6 1.6-11.8.3-1.5-.6-2.6-1.1-3.7-1.3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="brand-copy"><span class="brand-name">picks<span>nest</span><i>.</i></span><span class="brand-tagline">A home for good finds</span></span>
+          </a>
+          <p class="footer-blurb">Useful products, thoughtful finds, and little upgrades for everyday life.</p>
+        </div>
+        <div class="footer-links-group"><h2>Explore</h2><a href="#shop" data-category-link="all">All finds</a><a href="#shop" data-category-link="Kitchen Finds">Kitchen finds</a><a href="#shop" data-category-link="Home Finds">Home finds</a><a href="#shop" data-category-link="Tech Finds">Tech finds</a></div>
+        <div class="footer-links-group"><h2>More categories</h2><a href="#shop" data-category-link="Outdoor Finds">Outdoor finds</a><a href="#shop" data-category-link="Travel Finds">Travel finds</a><a href="#shop" data-category-link="Gadgets">Gadgets</a><a href="https://picksnest.com/affiliate-disclosure/" target="_blank" rel="noopener noreferrer">Affiliate disclosure</a></div>
+        <div class="footer-signoff"><span class="footer-star" aria-hidden="true">✳</span><p>Find the useful.<br /><em>Enjoy the everyday.</em></p><a href="#top">Back to the top ↑</a></div>
+      </div>
+      <div class="footer-bottom"><div class="shell"><span>© 2026 Picks Nest</span><span>Thoughtful finds for home and beyond.</span><a href="#top">Scroll to top ↑</a></div></div>
+    </footer>
+
+    <dialog class="product-dialog" id="product-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close product details">×</button>
+      <div class="dialog-layout">
+        <div class="dialog-image-wrap"><img id="dialog-image" src="" alt="" /></div>
+        <div class="dialog-copy">
+          <p class="eyebrow">A closer look</p>
+          <p class="dialog-category" id="dialog-category"></p>
+          <h2 id="dialog-title"></h2>
+          <p id="dialog-description" class="dialog-description"></p>
+          <div class="dialog-meta"><span>From the Picks Nest edit</span><time id="dialog-date"></time></div>
+          <p class="dialog-note">For the full product overview and current buying options, open the complete guide.</p>
+          <a class="button button-primary dialog-link" id="dialog-link" href="#" target="_blank" rel="noopener noreferrer">View product guide <span aria-hidden="true">↗</span></a>
+          <p class="dialog-disclosure">We may earn a commission from qualifying purchases, at no extra cost to you.</p>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
